@@ -63,7 +63,7 @@ We expect ytvis_2019 folder to be like
 
 3.
 
-Training w/ 8 GPUs (if changing the batch size, please refer https://arxiv.org/abs/1711.00489)
+Training w/ 8 GPUs (if using AdamW and trying to change the batch size, please refer to https://arxiv.org/abs/1711.00489)
 * Our suggestion is to use 8 GPUs.
 * Pretraining on COCO requires >= 16G GPU memory, while finetuning on YTVIS requires less.
 ```bash
@@ -85,7 +85,7 @@ python projects/IFC/train_net.py --num-gpus 8 --eval-only \
 Due to the small size of YTVIS dataset, the scores may fluctuate even if retrained with the same configuration.
 
 **Note:** The provided checkpoints are the ones with *highest* accuracies from multiple training attempts.
-If you are planning to cite IFC and its scores, we suggest you to refer the average scores reported in camera-ready version of NeurIPS.
+If you are planning to cite IFC and its scores, we suggest you to refer to the average scores reported in camera-ready version of NeurIPS.
 
 | backbone  | stride | FPS |  AP  | AP50 | AP75 |  AR1 |  AR10 | download |
 |:----------|:------:|:----:|:----:|:----:|:----:|:----:|:-----:|:--------:|
