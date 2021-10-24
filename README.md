@@ -90,7 +90,7 @@ If you are planning to cite IFC and its scores, we suggest you to refer to the a
 | backbone  | stride | FPS |  AP  | AP50 | AP75 |  AR1 |  AR10 | download |
 |:----------|:------:|:----:|:----:|:----:|:----:|:----:|:-----:|:--------:|
 | [ResNet-50](projects/IFC/configs/base_ytvis.yaml) | T=5<br>T=36 | 46.5<br>107.1 | 41.6<br>42.8 | 63.2<br>65.8 | 45.6<br>46.8 | 43.6<br>43.8 | 53.0<br>51.2 | [model](https://drive.google.com/file/d/1i2ChMm-jfilWdqEjEbfm0prKNh9_N-uK/view?usp=sharing) \| [results](https://drive.google.com/file/d/1dBVkIyYGDe8Lh18dBYO9a5OsdvcBhDSG/view?usp=sharing) |
-| [ResNet-101](projects/IFC/configs/base_ytvis.yaml) | T=36 | 89.4 | 44.6 | 69.2 | 49.5 | 44.0 | 52.1 | [model](https://drive.google.com/file/d/14leBVbWo4pWt_YvK-SLhd3W2S6mR0yV7/view?usp=sharing) \| [results](https://drive.google.com/file/d/1EnjCBUsvDeCyM5Pp9KRko_cbty9-KZIz/view?usp=sharing) |
+| [ResNet-101](projects/IFC/configs/R101_ytvis.yaml) | T=36 | 89.4 | 44.6 | 69.2 | 49.5 | 44.0 | 52.1 | [model](https://drive.google.com/file/d/14leBVbWo4pWt_YvK-SLhd3W2S6mR0yV7/view?usp=sharing) \| [results](https://drive.google.com/file/d/1EnjCBUsvDeCyM5Pp9KRko_cbty9-KZIz/view?usp=sharing) |
 ## License
 
 IFC is released under the [Apache 2.0 license](LICENSE).
