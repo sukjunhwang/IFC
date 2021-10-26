@@ -85,7 +85,7 @@ python projects/IFC/train_net.py --num-gpus 8 --eval-only \
 Due to the small size of YTVIS dataset, the scores may fluctuate even if retrained with the same configuration.
 
 **Note:** The provided checkpoints are the ones with *highest* accuracies from multiple training attempts.
-If you are planning to cite IFC and its scores, we suggest you to refer to the average scores reported in camera-ready version of NeurIPS.
+If you are planning to cite IFC and its scores, we suggest you to refer to the [average scores](https://github.com/sukjunhwang/IFC/issues/2) reported in camera-ready version of NeurIPS.
 
 | backbone  | stride | FPS |  AP  | AP50 | AP75 |  AR1 |  AR10 | download |
 |:----------|:------:|:----:|:----:|:----:|:----:|:----:|:-----:|:--------:|
