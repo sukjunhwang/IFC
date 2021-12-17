@@ -244,18 +244,21 @@ class Ifc(nn.Module):
             gt_masks_per_video = torch.zeros(mask_shape, dtype=torch.bool, device=self.device)
 
             gt_ids_per_video = []
+            gt_classes_per_video = torch.full((_num_instance,), self.num_classes, device=self.device)
             for f_i, targets_per_frame in enumerate(targets_per_video["instances"]):
                 targets_per_frame = targets_per_frame.to(self.device)
                 h, w = targets_per_frame.image_size
 
+                valid_cls_idx = (targets_per_frame.gt_classes != self.num_classes)
+                gt_classes_per_video[valid_cls_idx] = targets_per_frame.gt_classes[valid_cls_idx]
                 gt_ids_per_video.append(targets_per_frame.gt_ids[:, None])
                 gt_masks_per_video[:, f_i, :h, :w] = targets_per_frame.gt_masks.tensor
 
             gt_ids_per_video = torch.cat(gt_ids_per_video, dim=1)
             valid_idx = (gt_ids_per_video != -1).any(dim=-1)
 
-            gt_classes_per_video = targets_per_frame.gt_classes[valid_idx]          # N,
-            gt_ids_per_video = gt_ids_per_video[valid_idx]                          # N, num_frames
+            gt_classes_per_video = gt_classes_per_video[valid_idx]  # N,
+            gt_ids_per_video = gt_ids_per_video[valid_idx]          # N, num_frames
 
             gt_instances.append({"labels": gt_classes_per_video, "ids": gt_ids_per_video})
             gt_masks_per_video = gt_masks_per_video[valid_idx].float()          # N, num_frames, H, W
