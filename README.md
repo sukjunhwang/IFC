@@ -84,13 +84,12 @@ python projects/IFC/train_net.py --num-gpus 8 --eval-only \
 ## Model Checkpoints (YTVIS 2019)
 Due to the small size of YTVIS dataset, the scores may fluctuate even if retrained with the same configuration.
 
-**Note:** The provided checkpoints are the ones with *highest* accuracies from multiple training attempts.
-If you are planning to cite IFC and its scores, we suggest you to refer to the [average scores](https://github.com/sukjunhwang/IFC/issues/2) reported in camera-ready version of NeurIPS.
+**Note:** We suggest you to refer to the [average scores](https://github.com/sukjunhwang/IFC/issues/2) reported in camera-ready version of NeurIPS.
 
 | backbone  | stride | FPS |  AP  | AP50 | AP75 |  AR1 |  AR10 | download |
 |:----------|:------:|:----:|:----:|:----:|:----:|:----:|:-----:|:--------:|
-| [ResNet-50](projects/IFC/configs/base_ytvis.yaml) | T=5<br>T=36 | 46.5<br>107.1 | 41.6<br>42.8 | 63.2<br>65.8 | 45.6<br>46.8 | 43.6<br>43.8 | 53.0<br>51.2 | [model](https://drive.google.com/file/d/1i2ChMm-jfilWdqEjEbfm0prKNh9_N-uK/view?usp=sharing) \| [results](https://drive.google.com/file/d/1dBVkIyYGDe8Lh18dBYO9a5OsdvcBhDSG/view?usp=sharing) |
-| [ResNet-101](projects/IFC/configs/R101_ytvis.yaml) | T=36 | 89.4 | 44.6 | 69.2 | 49.5 | 44.0 | 52.1 | [model](https://drive.google.com/file/d/14leBVbWo4pWt_YvK-SLhd3W2S6mR0yV7/view?usp=sharing) \| [results](https://drive.google.com/file/d/1EnjCBUsvDeCyM5Pp9KRko_cbty9-KZIz/view?usp=sharing) |
+| [ResNet-50](projects/IFC/configs/base_ytvis.yaml) | T=5<br>T=36 | 46.5<br>107.1 | 41.6<br>42.8 | 63.2<br>65.8 | 45.6<br>46.8 | 43.6<br>43.8 | 53.0<br>51.2 | [model](https://yonsei-my.sharepoint.com/:u:/g/personal/sj_hwang_o365_yonsei_ac_kr/EXE-OLLBh0ZNqeodX4bULiwBRIi7079rCZvZOhk0obQvTg?e=eYL0r3) \| [results](https://yonsei-my.sharepoint.com/:u:/g/personal/sj_hwang_o365_yonsei_ac_kr/EUtmJ3wM6C1Dp95oNuMq57IBEivorwPFy63rI47R6Zw1BA?e=OifTD8) |
+| [ResNet-101](projects/IFC/configs/R101_ytvis.yaml) | T=36 | 89.4 | 44.6 | 69.2 | 49.5 | 44.0 | 52.1 | [model](https://yonsei-my.sharepoint.com/:u:/g/personal/sj_hwang_o365_yonsei_ac_kr/ETmV2wMkQs5Gpy2zBLKHRwIBX1p1SnX1kTioCSNZoXHvtA?e=3GqZBf) \| [results](https://yonsei-my.sharepoint.com/:u:/g/personal/sj_hwang_o365_yonsei_ac_kr/EVmUBp0TZzNHqjFvQ3_BTH0BXAoh28wLjQuztTTw2P-9Aw?e=XBVzWS) |
 ## License
 
 IFC is released under the [Apache 2.0 license](LICENSE).
@@ -101,10 +100,12 @@ If our work is useful in your project, please consider citing us.
 
 ```BibTeX
 @article{hwang2021video,
-  title   = {Video Instance Segmentation using Inter-Frame Communication Transformers},
-  author  = {Hwang, Sukjun and Heo, Miran and Oh, Seoung Wug and Kim, Seon Joo},
-  journal = {arXiv preprint arXiv:2106.03299},
-  year    = {2021}
+  title={Video instance segmentation using inter-frame communication transformers},
+  author={Hwang, Sukjun and Heo, Miran and Oh, Seoung Wug and Kim, Seon Joo},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={13352--13363},
+  year={2021}
 }
 ```
 
