@@ -88,8 +88,8 @@ Due to the small size of YTVIS dataset, the scores may fluctuate even if retrain
 
 | backbone  | stride | FPS |  AP  | AP50 | AP75 |  AR1 |  AR10 | download |
 |:----------|:------:|:----:|:----:|:----:|:----:|:----:|:-----:|:--------:|
-| [ResNet-50](projects/IFC/configs/base_ytvis.yaml) | T=5<br>T=36 | 46.5<br>107.1 | 41.6<br>42.8 | 63.2<br>65.8 | 45.6<br>46.8 | 43.6<br>43.8 | 53.0<br>51.2 | [model](https://yonsei-my.sharepoint.com/:u:/g/personal/sj_hwang_o365_yonsei_ac_kr/EXE-OLLBh0ZNqeodX4bULiwBRIi7079rCZvZOhk0obQvTg?e=eYL0r3) \| [results](https://yonsei-my.sharepoint.com/:u:/g/personal/sj_hwang_o365_yonsei_ac_kr/EUtmJ3wM6C1Dp95oNuMq57IBEivorwPFy63rI47R6Zw1BA?e=OifTD8) |
-| [ResNet-101](projects/IFC/configs/R101_ytvis.yaml) | T=36 | 89.4 | 44.6 | 69.2 | 49.5 | 44.0 | 52.1 | [model](https://yonsei-my.sharepoint.com/:u:/g/personal/sj_hwang_o365_yonsei_ac_kr/ETmV2wMkQs5Gpy2zBLKHRwIBX1p1SnX1kTioCSNZoXHvtA?e=3GqZBf) \| [results](https://yonsei-my.sharepoint.com/:u:/g/personal/sj_hwang_o365_yonsei_ac_kr/EVmUBp0TZzNHqjFvQ3_BTH0BXAoh28wLjQuztTTw2P-9Aw?e=XBVzWS) |
+| [ResNet-50](projects/IFC/configs/base_ytvis.yaml) | T=5<br>T=36 | 46.5<br>107.1 | 41.6<br>42.8 | 63.2<br>65.8 | 45.6<br>46.8 | 43.6<br>43.8 | 53.0<br>51.2 | [model](https://drive.google.com/file/d/1dwkg91omYLmcIA7ze6MZdZj4H5mWT5Fv/view?usp=share_link) \| [results](https://drive.google.com/file/d/1_h-JnVfuhRB-AVCsxCTBUoqOsA8QAyok/view?usp=share_link) |
+| [ResNet-101](projects/IFC/configs/R101_ytvis.yaml) | T=36 | 89.4 | 44.6 | 69.2 | 49.5 | 44.0 | 52.1 | [model](https://drive.google.com/file/d/1s2GnnpDqYIcP-_wX1Rm5vO3VnrfotaCv/view?usp=share_link) \| [results](https://drive.google.com/file/d/1UTHuKGfoW0Lg1BCzW6krEIwfzqlqyGfg/view?usp=share_link) |
 ## License
 
 IFC is released under the [Apache 2.0 license](LICENSE).
